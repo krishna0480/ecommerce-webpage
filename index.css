@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    text-transform: capitalize;
+    background-color: #fff;
+}
+/*   */
+header h2{
+    font-size: 30px;
+}
+h2 span{
+    color: #ff0054;
+}
+ul li {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+li a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 5px;
+    background-color: #ff0054;
+    transition: 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+.search{
+    background-image:url(./pexels-search1.jpg);
+    background-size: cover;
+    padding: 4rem;
+    margin: 0 4rem;
+    border-radius: 25px;
+    text-transform: capitalize;
+    line-height: 40px;
+}
+.search #h01,.search h5{
+    color: black;
+}
+.search #h02{
+    color: #ff0054 ;
+}
+.src{
+    background-color: #fff;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.src i{
+    padding: 1rem 0 0 0.5rem ;
+}
+.src .input1{
+    height: 50px;
+    border: none;
+}
+.input2{
+    border: none;
+    font-size: 20px;
+    padding: 10px ;
+    background-color: #ff0054;
+    border-radius: 25px;
+    color: #fff;
+    width: 150px;
+    transition: 0.5s;
+}
+.input2:hover{
+    box-shadow: 4px 4px 10px #ff0054;
+    cursor: pointer;
+}
+.products h2{
+    text-align: center;
+    padding: 30px ;
+    text-transform: capitalize;
+   
+}
+.products h2 span{
+    color: #ff0054;
+}
+.list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
+   
+}
+.list .prod{
+    border: 1px solid gray ;
+    border-radius: 25px;
+   padding: 20px 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+}
+.list .prod:hover{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+.list img{
+    width: 15rem;
+    border-radius: 25px;
+    
+}
+.list .des{
+    padding: 10px 0;
+    margin: 0 0 0 -40px;
+    text-align: start;
+}
+.discount{
+    background-image: url(./pexels-cottonbro-studio-6769372.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem ;
+    text-align: center;
+}
+.discount span{
+    color: #ff0054;
+}
+.discount .dinput{
+    margin: 20px 0 0 0;
+    border: none;
+    padding:0.5rem 3rem;
+    border-radius: 25px;
+     color: #fff;
+     background-color: #ff0054;
+     cursor:pointer;
+     font-size: 20px;
+  
+}
+.grid{
+    text-transform: capitalize;
+}
+.grid h1{
+    color: #000;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    
+}
+.grid h1 span{
+    color: #ff0054;
+}
+.inner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 30px;
+    padding: 30px;
+}
+/* .inner h5{
+    padding: 3rem;
+    color: #fff;
+} */
+.inner .gone{
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0)),url(./gridrow1\ \(1\).jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 4px 4px 10px #000;
+}
+.gmini1{
+    padding: 0 0 20px 10px;
+    color: #fff;
+}
+.gmini2{
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 50px;
+}
+.gmini2 span{
+    color: #ff0054;
+}
+.gmini2 button{
+    border:2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    margin: 0 0 0 40px;
+    cursor: pointer;
+    
+}
+.inner .gtwo{
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0)), url(./gridrow1\ \(2\).jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #000;
+}
+.inner .gthree{
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0)), url(./gridrow1\ \(3\).jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #000;
+}
+.inner .gfour{
+    background:linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.3),rgba(0,0,0,0)), url(./gridrow2\(2\).jpg);
+    background-color: transparent;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-size: cover;
+    background-position: center top;
+    width: 840px;
+    height: 645px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #000;
+}
+.inner .gfive{
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0)), url(./gridrow2\(3\).jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 400px;
+    height: 310px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #000;
+}
+.inner .gsix{
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3),rgba(0,0,0,0)), url(./pexels-hamza-nouasria-12725052.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #000;
+}
+.customer{
+    
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem ;
+    border-radius: 25px;
+}
+.cone{
+    margin: 1rem 2rem;
+    background:linear-gradient(70deg,#9e0059,#d40056,#ff0054);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.customer i{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+}
+.smini{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.smini img{
+    padding: 1rem;
+    width: 200px;
+    height: 150px;
+}
+#simg{
+    width: 125x;
+    height: 90px;
+}
+.spon{
+    text-align: center;
+    margin: 1rem;
+}
+.spon span{
+    color: #ff0054;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background:linear-gradient(120deg,#9e0059,#d40056,#ff0054);
+    padding: 3rem;
+}
+.ftwo{
+    font-size: 20px;
+    
+}
+.ficon{
+    word-spacing: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (min-width:1008px) and (max-width:1300px) {
+    
+}
+@media screen and (min-width:641px) and (max-width:1007px) {
+    .list{
+        grid-template-columns: auto auto;
+        padding: 10px;
+        column-gap: 10px;
+    }
+    .inner{
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        padding: 10px;
+        column-gap: 5px;
+        margin: 0 0 0 20px;
+    }
+    .inner .gone{
+        width: 350px;
+        height: 250px;
+    }
+    .inner .gtwo{
+        width: 350px;
+        height: 250px;
+    }
+    .inner .gthree{
+        width: 350px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .inner .gfour{
+        width: 350px;
+        height: 250px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        
+    }
+    .gmini2{
+        font-size: 20px;
+    }
+    .gmini2 button{
+        font-size: 20px;
+        padding: 0.5rem;
+        margin-left: 0px;
+    }
+    .inner .gfive{
+        width: 350px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        
+    }
+    .inner .gsix{
+        width: 350px;
+        height: 250px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        
+    }
+    .cone{
+        height: 300px;
+        overflow: hidden;
+    }
+    .smini img{
+        padding: 1rem;
+        width: 150px;
+        height: 100px;
+    }
+    #simg{
+        width: 100x;
+        height: 70px;
+    }
+}
+@media screen and (min-width:100px) and (max-width:640px) {
+    .list{
+        grid-template-columns: auto auto;
+        padding: 10px;
+        column-gap: 10px;
+    }
+    .inner{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        padding: 0;
+        column-gap: 5px;
+        margin: 0 0 0 15px;
+        font-size: 15px;
+    }
+    .inner .gone{
+        width: 200px;
+        height: 100px;
+        padding: 10px 0 0 0;
+    }
+    .inner .gtwo{
+        width: 200px;
+        height: 100px;
+        grid-column-start: 2;
+        grid-column-end:3 ;
+    }
+    .inner .gthree{
+        width: 200px;
+        height: 100px;
+    }
+    .inner .gfour{
+        width: 200px;
+        height: 100px; 
+        grid-column-start: 2;
+        grid-column-end:3 ;
+    }
+    .gmini2{
+        font-size: 12px;
+    }
+    .gmini2 button{
+        font-size: 10px;
+        padding: 0.5rem;
+        margin-left: 0px;
+    }
+    .inner .gfive{
+        width: 200px;
+        height: 100px;
+        grid-column-start: 1;
+        grid-column-end: 1; 
+        
+    }
+    .inner .gsix{
+        width: 200px;
+        height: 100px;
+        grid-column-start: 2;
+        grid-column-end:3 ;
+        grid-row-start: 3;
+    }
+    .customer{
+        overflow: hidden;
+        flex-direction: column;
+        margin-left: 20%;
+        
+    }
+    .cone{
+        height: 200px;
+       font-display:25ch;
+        font-size: 10px;
+        width: 150px;
+        overflow: hidden;
+    }
+    .list img{
+        width: 10rem;
+        border-radius: 25px;
+        
+    }
+    .smini img{
+        padding: 1rem;
+        width: 1000px;
+        height: 70px;
+    }
+    #simg{
+        width: 50x;
+        height: 30px;
+    }
+    .src{
+        background-color: #fff;
+        padding: 0 0 0 px;
+        display: inline-block;
+        border-radius: 25px;
+        margin-top: 10px;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .src i{
+        padding: 1rem 0 0 0.5rem ;
+    }
+    .src .input1{
+        height: 50px;
+        border: none;
+        width: 50px;
+    }
+    .input2{
+        border: none;
+        font-size: 20px;
+        padding: 10px ;
+        background-color: #ff0054;
+        border-radius: 25px;
+        color: #fff;
+        width: 100px;
+        transition: 0.5s;
+    }
+   
+}
